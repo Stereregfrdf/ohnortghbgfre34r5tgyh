@@ -1,0 +1,117 @@
+{
+  "capital": 443,
+  "oob": "PAK_1936",
+  "recruit_character": [
+    "PAK_acd2",
+    "PAK_fascist_guy",
+    "PAK_ncs",
+    "PAK_nccr",
+    "PAK_aco2",
+    "PAK_communist_guy",
+    "PAK_ai2",
+    "PAK_ar",
+    "PAK_coi",
+    "PAK_acas",
+    "PAK_acgs",
+    "PAK_aa2",
+    "PAK_democratic_guy",
+    "PAK_acr",
+    "PAK_stc",
+    "PAK_awt",
+    "PAK_pot",
+    "PAK_mt",
+    "PAK_ncm",
+    "PAK_nt"
+  ],
+  "set_technology": {
+    "infantry_weapons": 1,
+    "infantry_weapons1": 1,
+    "gwtank": 1,
+    "tech_support": 1,
+    "tech_engineers": 1,
+    "tech_recon": 1,
+    "transport": 1,
+    "trench_warfare": 1,
+    "fleet_in_being": 1,
+    "CAS1": 1
+  },
+  "if": {
+    "limit": {
+      "has_dlc": "Together for Victory"
+    },
+    "add_to_tech_sharing_group": "commonwealth_research"
+  },
+  "set_convoys": 20,
+  "add_ideas": [
+    "RAJ_agrarian_society"
+  ],
+  "set_politics": {
+    "ruling_party": "democratic",
+    "last_election": "1935.11.14",
+    "election_frequency": 48,
+    "elections_allowed": false
+  },
+  "set_popularities": {
+    "democratic": 80,
+    "neutrality": 17,
+    "communism": 1,
+    "fascism": 2
+  },
+  "create_country_leader": [
+    {
+      "name": "Qazi Muhammad Essa",
+      "picture": "gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds",
+      "expire": "1960.1.1",
+      "ideology": "despotism",
+      "traits": []
+    },
+    {
+      "name": "Muhammad Ali Jinnah",
+      "picture": "gfx/leaders/PAK/portrait_RAJ_muhammad_ali_jinnah.dds",
+      "expire": "1960.1.1",
+      "ideology": "liberalism",
+      "traits": []
+    },
+    {
+      "name": "Haji Mohammad Danesh",
+      "picture": "gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds",
+      "expire": "1960.1.1",
+      "ideology": "marxism",
+      "traits": []
+    }
+  ],
+  "create_corps_commander": [
+    {
+      "name": "Muhammad Zia-ul-Haq",
+      "portrait_path": "gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic.dds",
+      "traits": [],
+      "skill": 2,
+      "attack_skill": 2,
+      "defense_skill": 1,
+      "planning_skill": 2,
+      "logistics_skill": 2
+    },
+    {
+      "name": "Iftikhar Khan Janjua",
+      "portrait_path": "gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic_2.dds",
+      "traits": [],
+      "skill": 3,
+      "attack_skill": 2,
+      "defense_skill": 2,
+      "planning_skill": 3,
+      "logistics_skill": 3
+    },
+    {
+      "name": "Akbar Khan",
+      "portrait_path": "gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic.dds",
+      "traits": [
+        "trickster"
+      ],
+      "skill": 3,
+      "attack_skill": 1,
+      "defense_skill": 3,
+      "planning_skill": 3,
+      "logistics_skill": 3
+    }
+  ]
+}

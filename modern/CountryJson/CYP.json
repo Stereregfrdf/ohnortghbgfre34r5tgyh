@@ -1,0 +1,69 @@
+{
+  "capital": 183,
+  "recruit_character": [
+    "CYP_ncm",
+    "CYP_acd2",
+    "CYP_ar",
+    "CYP_aa2",
+    "CYP_awt",
+    "CYP_acgs",
+    "CYP_mt",
+    "CYP_nccr",
+    "CYP_aco2",
+    "CYP_nt",
+    "CYP_acas",
+    "CYP_acr",
+    "CYP_ai2",
+    "CYP_ncs"
+  ],
+  "send_embargo": "NCY",
+  "oob": "CYP_1936",
+  "give_military_access": [
+    "ENG",
+    "GRE"
+  ],
+  "set_technology": {
+    "infantry_weapons": 1,
+    "tech_mountaineers": 1,
+    "tech_support": 1,
+    "tech_engineers": 1,
+    "tech_recon": 1,
+    "gw_artillery": 1,
+    "trench_warfare": 1,
+    "fuel_silos": 1,
+    "synth_oil_experiments": 1
+  },
+  "set_convoys": 5,
+  "set_politics": {
+    "ruling_party": "democratic",
+    "last_election": "1936.1.1",
+    "election_frequency": 48,
+    "elections_allowed": true
+  },
+  "set_popularities": {
+    "democratic": 50,
+    "fascism": 8,
+    "communism": 15,
+    "neutrality": 27
+  },
+  "create_country_leader": [
+    {
+      "name": "Ezekias Papaioannou",
+      "desc": "POLITICS_FEDERICO_LAREDO_BRU_DESC",
+      "picture": "gfx/ezekias.png",
+      "expire": "1965.1.1",
+      "ideology": "marxism",
+      "traits": [
+        "veteran_communist"
+      ]
+    },
+    {
+      "name": "Antonios Leontiou",
+      "desc": "POLITICS_FEDERICO_LAREDO_BRU_DESC",
+      "picture": "gfx/leaders/CYP/Portrait_Cyprus_Leontios_Second.png",
+      "expire": "1965.1.1",
+      "ideology": "liberalism",
+      "traits": []
+    }
+  ]
+}

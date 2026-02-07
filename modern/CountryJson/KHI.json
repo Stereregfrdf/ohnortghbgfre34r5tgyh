@@ -1,0 +1,50 @@
+{
+  "capital": 932,
+  "declare_war_on": {
+    "target": "TMS",
+    "type": "annex_everything"
+  },
+  "oob": "KHI_1936",
+  "set_cosmetic_tag": "TMS_tur",
+  "set_research_slots": 2,
+  "add_ideas": [
+    "KHI_turkestan_supporters",
+    "KHI_german_military_tactics",
+    "KHI_agrarian_population",
+    "KHI_turkish_army_traditions",
+    "extensive_conscription",
+    "closed_economy",
+    "partial_economic_mobilisation"
+  ],
+  "set_technology": {
+    "infantry_weapons": 1,
+    "infantry_weapons1": 1,
+    "tech_recon": 1,
+    "tech_support": 1,
+    "tech_engineers": 1,
+    "tech_mountaineers": 1,
+    "tech_trucks": 1,
+    "motorised_infantry": 1,
+    "gw_artillery": 1
+  },
+  "set_politics": {
+    "ruling_party": "fascism",
+    "last_election": "1936.1.1",
+    "election_frequency": 48,
+    "elections_allowed": true
+  },
+  "set_popularities": {
+    "democratic": 0,
+    "fascism": 50,
+    "communism": 20,
+    "neutrality": 30
+  },
+  "recruit_character": [
+    "KHI_nedirbay_aytakov",
+    "KHI_enver_pasha",
+    "KHI_cemal_pasha",
+    "KHI_vehip_pasha",
+    "KHI_mehmed_talat_pasa",
+    "KHI_ibrahim_bek"
+  ]
+}

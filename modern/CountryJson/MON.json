@@ -1,0 +1,45 @@
+{
+  "capital": 330,
+  "oob": "MON_1939",
+  "set_technology": {
+    "infantry_weapons": 1,
+    "support_weapons": 1,
+    "gw_artillery": 1
+  },
+  "recruit_character": [
+    "MON_anandyn_amar",
+    "MON_mingzhu_zhanshan",
+    "MON_fu_shangzhi",
+    "MON_songgotu_kangan",
+    "MON_haidav",
+    "MON_dagva",
+    "MON_chimid",
+    "MON_sukhbaataryn_yanjmaa",
+    "MON_ganbaatar",
+    "MON_ulanhu",
+    "MON_vg_pyrselov",
+    "MON_lee_shou_hsin",
+    "MON_buyannmeh",
+    "MON_horloogiyn_choybalsan",
+    "MON_olziytrygyn_badrak",
+    "MON_dashdorj",
+    "MON_gomgchigryn_bumtsend",
+    "MON_dansrabilegyin_dogsam",
+    "MON_yundunwangcug",
+    "MON_pai_yun_ti"
+  ],
+  "add_ideas": [
+    "limited_conscription",
+    "neutrality_idea"
+  ],
+  "set_politics": {
+    "ruling_party": "communism",
+    "last_election": "1936.1.1"
+  },
+  "set_popularities": {
+    "communism": 60,
+    "fascism": 15,
+    "neutrality": 20,
+    "democratic": 5
+  }
+}

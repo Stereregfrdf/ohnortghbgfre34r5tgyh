@@ -1,0 +1,39 @@
+{
+  "capital": 329,
+  "oob": "TAN_1936",
+  "set_technology": {
+    "infantry_weapons": 1
+  },
+  "add_ideas": [
+    "limited_conscription"
+  ],
+  "recruit_character": [
+    "TAN_salchak_toka",
+    "TAN_rugalinskij",
+    "TAN_v_i_kulikovskij",
+    "TAN_grinchik",
+    "TAN_tulberdiev",
+    "TAN_tanchak_shoma",
+    "TAN_alaverdov",
+    "TAN_homushku_churguj_ool",
+    "TAN_i_p_rugalinskij",
+    "TAN_ruzhenko",
+    "TAN_konstantinov",
+    "TAN_kechir_ool",
+    "TAN_democratic_guy",
+    "TAN_communist_guy",
+    "TAN_fascist_guy",
+    "TAN_s_t_perilenko",
+    "TAN_vladimir_sokoline",
+    "TAN_sodmon_balchor"
+  ],
+  "set_politics": {
+    "ruling_party": "communism",
+    "last_election": "1936.1.1",
+    "election_frequency": 48,
+    "elections_allowed": false
+  },
+  "set_popularities": {
+    "communism": 100
+  }
+}

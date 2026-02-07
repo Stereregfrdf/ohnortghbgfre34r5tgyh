@@ -1,0 +1,50 @@
+{
+  "capital": 458,
+  "oob": "FRA_TUN",
+  "set_technology": {
+    "infantry_weapons": 1
+  },
+  "give_military_access": "FRA",
+  "set_convoys": 20,
+  "recruit_character": [
+    "TUN_acgs",
+    "TUN_acr",
+    "TUN_stc",
+    "TUN_ncm",
+    "TUN_democratic_guy",
+    "TUN_communist_guy",
+    "TUN_coi",
+    "TUN_pot",
+    "TUN_aa2",
+    "TUN_awt",
+    "TUN_acas",
+    "TUN_mt",
+    "TUN_nccr",
+    "TUN_ai2",
+    "TUN_ncs",
+    "TUN_aco2",
+    "TUN_acd2",
+    "TUN_nt",
+    "TUN_ar",
+    "TUN_fascist_guy"
+  ],
+  "set_politics": {
+    "ruling_party": "neutrality",
+    "last_election": "1936.1.1",
+    "election_frequency": 48,
+    "elections_allowed": false
+  },
+  "set_popularities": {
+    "democratic": 25,
+    "fascism": 20,
+    "communism": 5,
+    "neutrality": 50
+  },
+  "create_country_leader": {
+    "name": "Habib Bourguiba",
+    "desc": "",
+    "picture": "gfx/leaders/TUN/TUN_habib_bourguiba.png",
+    "ideology": "centrism",
+    "traits": []
+  }
+}

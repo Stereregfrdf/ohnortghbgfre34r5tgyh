@@ -1,0 +1,37 @@
+{
+  "capital": 611,
+  "set_politics": {
+    "ruling_party": "neutrality",
+    "last_election": "1936.1.1",
+    "election_frequency": 48,
+    "elections_allowed": false
+  },
+  "set_popularities": {
+    "neutrality": 90,
+    "communism": 5,
+    "fascism": 5
+  },
+  "oob": "MEN_1936",
+  "set_technology": {
+    "infantry_weapons": 1
+  },
+  "recruit_character": [
+    "MEN_prince_demchugdongrub",
+    "MEN_sonin_xiangying",
+    "MEN_zhao_zhanshan",
+    "MEN_songgotu_shangzhi",
+    "MEN_hesehn_tiemei",
+    "MEN_guan_xingde",
+    "MEN_kyoiji_tomonaga",
+    "MEN_deng_linge",
+    "MEN_hung_zhehuang",
+    "MEN_nakajima_kesago",
+    "MEN_yonimitsu_kasahara",
+    "MEN_nalan_kang_an",
+    "MEN_songgotu_zhanshan",
+    "MEN_megata_toshiro"
+  ],
+  "add_ideas": [
+    "soldiers_of_the_steppe"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "capital": 700,
+  "oob": "SIE_1936",
+  "set_technology": {
+    "infantry_weapons": 1
+  },
+  "set_convoys": 10,
+  "recruit_character": [
+    "SIE_acas",
+    "SIE_mt",
+    "SIE_nccr",
+    "SIE_ai2",
+    "SIE_ncs",
+    "SIE_aco2",
+    "SIE_acd2",
+    "SIE_nt",
+    "SIE_ar",
+    "SIE_fascist_guy",
+    "SIE_acgs",
+    "SIE_acr",
+    "SIE_stc",
+    "SIE_ncm",
+    "SIE_democratic_guy",
+    "SIE_communist_guy",
+    "SIE_coi",
+    "SIE_pot",
+    "SIE_aa2",
+    "SIE_awt"
+  ],
+  "set_politics": {
+    "ruling_party": "neutrality",
+    "last_election": "1936.1.1",
+    "election_frequency": 48,
+    "elections_allowed": true
+  },
+  "set_popularities": {
+    "neutrality": 100
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "capital": 540,
+  "oob": "ANG_1936",
+  "give_military_access": "POR",
+  "set_technology": {
+    "infantry_weapons": 1,
+    "tech_mountaineers": 1
+  },
+  "set_convoys": 5,
+  "recruit_character": [
+    "ANG_acgs",
+    "ANG_ncm",
+    "ANG_mt",
+    "ANG_nt",
+    "ANG_ai2",
+    "ANG_fascist_guy",
+    "ANG_stc",
+    "ANG_communist_guy",
+    "ANG_aa2",
+    "ANG_ar",
+    "ANG_acd2",
+    "ANG_acr",
+    "ANG_coi",
+    "ANG_acas",
+    "ANG_awt",
+    "ANG_pot",
+    "ANG_nccr",
+    "ANG_aco2",
+    "ANG_democratic_guy",
+    "ANG_ncs"
+  ],
+  "set_politics": {
+    "ruling_party": "neutrality",
+    "last_election": "1936.1.1",
+    "election_frequency": 48,
+    "elections_allowed": false
+  },
+  "set_popularities": {
+    "neutrality": 100
+  },
+  "create_country_leader": {
+    "name": "Jonas Lote",
+    "picture": "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds",
+    "expire": "1965.1.1",
+    "ideology": "centrism",
+    "traits": []
+  }
+}

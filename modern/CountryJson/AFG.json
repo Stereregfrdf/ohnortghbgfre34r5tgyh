@@ -1,0 +1,187 @@
+{
+  "capital": 267,
+  "if": [
+    {
+      "limit": {
+        "NOT": {
+          "has_dlc": "No Step Back"
+        }
+      },
+      "set_oob": "AFG_1936"
+    },
+    {
+      "limit": {
+        "has_dlc": "No Step Back"
+      },
+      "set_oob": "AFG_1936_nsb"
+    },
+    {
+      "limit": {
+        "NOT": {
+          "has_dlc": "No Step Back"
+        }
+      },
+      "set_technology": {
+        "gwtank": 1,
+        "basic_light_tank": 1
+      }
+    },
+    {
+      "limit": {
+        "has_dlc": "No Step Back"
+      },
+      "set_technology": {
+        "gwtank_chassis": 1
+      }
+    }
+  ],
+  "set_technology": {
+    "infantry_weapons": 1
+  },
+  "IF": [
+    {
+      "limit": {
+        "has_dlc": "Graveyard of Empires"
+      },
+      "recruit_character": [
+        "AFG_mohammed_zahir_shah",
+        "AFG_mohammad_hashim_khan",
+        "AFG_sardar_shah_wali_khan",
+        "AFG_abdur_rahim_khan",
+        "AFG_mahmud_tarzi",
+        "AFG_mohammed_daoud_khan",
+        "AFG_abdul_majid_zabuli",
+        "AFG_abdul_hai_habibi",
+        "AFG_qiamuddin_khadim",
+        "AFG_ghulam_yahya_khan_tarzi",
+        "AFG_ghulam_muhammad_ghobar",
+        "AFG_turbaz_khan",
+        "AFG_mohammad_gul_khan_momand",
+        "AFG_shah_mahmud_khan",
+        "AFG_amunullah_khan",
+        "AFG_soraya_tarzi",
+        "AFG_provisional_government",
+        "AFG_muhammad_ibrahim_khan",
+        "AFG_generic_army_1",
+        "AFG_generic_army_2",
+        "AFG_generic_army_3",
+        "AFG_generic_army_4",
+        "AFG_generic_navy_1",
+        "AFG_generic_navy_2",
+        "AFG_placeholder_fascist",
+        "AFG_generic_american_1",
+        "AFG_generic_american_2",
+        "AFG_generic_american_3"
+      ],
+      "set_technology": {
+        "gw_artillery": 1
+      },
+      "add_ideas": [
+        "AFG_mohammad_zahir_shah_ns",
+        "AFG_turkish_military_mission"
+      ],
+      "set_politics": {
+        "ruling_party": "neutrality",
+        "last_election": "1936.1.1",
+        "election_frequency": 48,
+        "elections_allowed": false
+      },
+      "set_popularities": {
+        "fascism": 10,
+        "communism": 0,
+        "democratic": 15,
+        "neutrality": 75
+      },
+      "set_war_support": 0.1,
+      "set_stability": 0.0,
+      "division_template": {
+        "name": "Pashtun Levy",
+        "is_locked": true,
+        "force_allow_recruiting": false,
+        "regiments": {
+          "irregular_infantry": [
+            {
+              "x": 0,
+              "y": 0
+            },
+            {
+              "x": 0,
+              "y": 1
+            },
+            {
+              "x": 1,
+              "y": 0
+            },
+            {
+              "x": 1,
+              "y": 1
+            },
+            {
+              "x": 2,
+              "y": 0
+            },
+            {
+              "x": 2,
+              "y": 1
+            }
+          ]
+        },
+        "override_model": "AFG_militia_entity"
+      }
+    },
+    {
+      "limit": {
+        "NOT": {
+          "has_dlc": "Graveyard of Empires"
+        }
+      },
+      "recruit_character": [
+        "AFG_mohammed_zahir_shah",
+        "AFG_akram_sattari",
+        "AFG_yaqub_khan",
+        "AFG_mihrdil_shahnawaz",
+        "AFG_sardar_shah_wali_khan",
+        "AFG_hares_muzafar",
+        "AFG_asadullah_seraj_khan",
+        "AFG_gholam_wali",
+        "AFG_nasirullah_husain",
+        "AFG_muhammad_amin_bughra",
+        "AFG_azam_ataullah",
+        "AFG_mohammed_daoud_khan",
+        "AFG_renato_bardolucci",
+        "AFG_ali_muhammed_khan",
+        "AFG_mohammed_etemadi_khan",
+        "AFG_aalem_daana",
+        "AFG_wazir_akbar_khan",
+        "AFG_mahmud_khan",
+        "AFG_haji_faiz_muhammed_zikeria",
+        "AFG_mohammad_hashim_khan",
+        "AFG_muhammed_nowroz"
+      ],
+      "set_politics": {
+        "ruling_party": "neutrality",
+        "last_election": "1936.1.1",
+        "election_frequency": 48,
+        "elections_allowed": false
+      },
+      "set_popularities": {
+        "fascism": 15,
+        "communism": 10,
+        "neutrality": 75
+      }
+    }
+  ],
+  "1939.1.1": {
+    "set_politics": {
+      "ruling_party": "neutrality",
+      "last_election": "1936.1.1",
+      "election_frequency": 48,
+      "elections_allowed": false
+    },
+    "set_popularities": {
+      "fascism": 20,
+      "communism": 10,
+      "neutrality": 70
+    }
+  }
+}

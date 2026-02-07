@@ -1,0 +1,53 @@
+{
+  "capital": 817,
+  "recruit_character": [
+    "NCY_ncm",
+    "NCY_acd2",
+    "NCY_ar",
+    "NCY_aa2",
+    "NCY_awt",
+    "NCY_acgs",
+    "NCY_mt",
+    "NCY_nccr",
+    "NCY_aco2",
+    "NCY_nt",
+    "NCY_acas",
+    "NCY_acr",
+    "NCY_ai2",
+    "NCY_ncs",
+    "NCY_mehmet_remzi_okan",
+    "NCY_Yuksel_Ozulku",
+    "NCY_nazmi_solok"
+  ],
+  "oob": "NCY_2000",
+  "set_convoys": 10,
+  "set_technology": {
+    "infantry_weapons": 1,
+    "tech_mountaineers": 1,
+    "tech_support": 1,
+    "tech_engineers": 1,
+    "tech_recon": 1,
+    "gw_artillery": 1,
+    "trench_warfare": 1,
+    "tech_trucks": 1,
+    "fuel_silos": 1,
+    "synth_oil_experiments": 1
+  },
+  "set_popularities": {
+    "democratic": 38,
+    "communism": 3,
+    "fascism": 0,
+    "neutrality": 59
+  },
+  "set_politics": {
+    "ruling_party": "neutrality",
+    "last_election": "1935.2.8",
+    "elections_allowed": true
+  },
+  "create_country_leader": {
+    "name": "Military Junta",
+    "picture": "gfx/tsk.jpg",
+    "ideology": "despotism",
+    "traits": []
+  }
+}

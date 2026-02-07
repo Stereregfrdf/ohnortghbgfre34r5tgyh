@@ -1,0 +1,124 @@
+{
+  "capital": 271,
+  "oob": "ETH_1936",
+  "set_technology": {
+    "infantry_weapons": 1,
+    "tech_mountaineers": 1,
+    "tech_trucks": 1,
+    "basic_train": 1
+  },
+  "recruit_character": [
+    "ETH_haile_selassie",
+    "ETH_haile_selassie_gugsa",
+    "ETH_alemework_beyene",
+    "ETH_ras_imru_haile_selassie",
+    "ETH_seyoum_mengesha",
+    "ETH_desta_damtew",
+    "ETH_ras_kassa",
+    "ETH_makonnen_endelkatchew",
+    "ETH_john_robinson"
+  ],
+  "IF": [
+    {
+      "limit": {
+        "has_dlc": "By Blood Alone"
+      },
+      "recruit_character": [
+        "ETH_hailu_tekle_haymanot",
+        "ETH_abba_jofir",
+        "ETH_amha_selassie",
+        "ETH_mulugeta_yeggazu_of_illubabor",
+        "ETH_abebe_aregai",
+        "ETH_balcho_safo",
+        "ETH_ayalew_birru",
+        "ETH_beyene_merid",
+        "ETH_nasibu_zeamanuel",
+        "ETH_random_general_1",
+        "ETH_random_general_2",
+        "ETH_random_general_3",
+        "ETH_random_general_4",
+        "ETH_random_general_5",
+        "ETH_random_general_6",
+        "ETH_abuna_qerellos_iv",
+        "IA_emma_goldman",
+        "ETH_heruy_wolde_selassie",
+        "ETH_getachew_abate",
+        "IA_sakutaro_iwasa",
+        "IA_sanshiro_ishikawa",
+        "ETH_workneh_eshete",
+        "ETH_tadesse_birru",
+        "ETH_yilma_deressa",
+        "ETH_menen_asfaw",
+        "ETH_abuna_abraham",
+        "ETH_tekle_hawariat_tekle_mariyam",
+        "ETH_random_leader_1",
+        "ETH_random_leader_2",
+        "ETH_random_leader_3",
+        "ETH_random_leader_4",
+        "ETH_random_leader_5",
+        "ETH_random_leader_6",
+        "ETH_senedu_gebru",
+        "ETH_random_sud_advisor",
+        "ETH_random_som_advisor",
+        "ETH_anarchist_council",
+        "ETH_prov_mil_admin",
+        "ETH_viking_tamm",
+        "ETH_carl_gustav_von_rosen",
+        "ETH_domenico_mondelli",
+        "ETH_wehib_pasha",
+        "ETH_feodor_konovalov"
+      ]
+    },
+    {
+      "limit": {
+        "NOT": {
+          "has_dlc": "By Blood Alone"
+        }
+      },
+      "recruit_character": [
+        "ETH_fitawrari_yeebio_woldai",
+        "ETH_amare_makonnen",
+        "ETH_gabriel_zawde_gilaneh",
+        "ETH_woldemeskal_tariku",
+        "ETH_ras_kebbede",
+        "ETH_wondossen_kassa",
+        "ETH_dedja_zinatch_nadeon",
+        "ETH_haile_abba_mersa",
+        "ETH_ras_seyum",
+        "ETH_mesfin_sileshi",
+        "ETH_lij_abiye_abebe",
+        "ETH_lij_johannes",
+        "ETH_fitauri_zawde_gobena",
+        "ETH_bedjironde_tekle_hawariate"
+      ]
+    },
+    {
+      "limit": {
+        "has_dlc": "By Blood Alone"
+      },
+      "set_popularities": {
+        "neutrality": 70,
+        "fascism": 20,
+        "democratic": 5,
+        "communism": 5
+      }
+    },
+    {
+      "limit": {
+        "NOT": {
+          "has_dlc": "By Blood Alone"
+        }
+      },
+      "set_popularities": {
+        "neutrality": 100
+      }
+    }
+  ],
+  "set_convoys": 5,
+  "set_politics": {
+    "ruling_party": "neutrality",
+    "last_election": "1936.1.1",
+    "election_frequency": 48,
+    "elections_allowed": false
+  }
+}
