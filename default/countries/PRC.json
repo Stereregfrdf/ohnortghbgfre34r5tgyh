@@ -1,0 +1,615 @@
+{
+  "if": {
+    "limit": {
+      "has_dlc": "No Compromise, No Surrender"
+    },
+    "set_capital": {
+      "state": 622
+    },
+    "set_oob": "PRC_1936_TSR",
+    "set_rule": {
+      "can_join_factions": false
+    },
+    "else_if": {
+      "limit": {
+        "NOT": {
+          "has_dlc": "No Compromise, No Surrender"
+        }
+      },
+      "set_capital": {
+        "state": 1032
+      },
+      "set_oob": "PRC_1936"
+    }
+  },
+  "set_politics": {
+    "ruling_party": "communism",
+    "last_election": "1936.1.1",
+    "election_frequency": 48,
+    "elections_allowed": false
+  },
+  "set_popularities": {
+    "communism": 100
+  },
+  "add_ideas": [
+    "closed_economy",
+    "service_by_requirement",
+    "partial_economic_mobilisation"
+  ],
+  "set_technology": {
+    "infantry_weapons": 1,
+    "tech_trucks": 1,
+    "militia_tech": 1,
+    "gw_artillery": 1
+  },
+  "set_grand_doctrine": "mass_assault",
+  "set_stability": 0.43,
+  "set_war_support": 0.5,
+  "recruit_character": [
+    "PRC_mao_zedong",
+    "PRC_zhu_de",
+    "PRC_chen_yi",
+    "PRC_peng_dehuai",
+    "PRC_lin_biao",
+    "PRC_kwong_hu",
+    "PRC_luo_zhao",
+    "PRC_liang_ma",
+    "PRC_ziao_jingguang",
+    "PRC_fang_zeyi",
+    "PRC_ye_jianying",
+    "PRC_chen_geng",
+    "PRC_liu_bocheng",
+    "PRC_otto_braun",
+    "PRC_xu_xiangqian",
+    "PRC_nie_rongzhen",
+    "PRC_su_yu",
+    "PRC_gao_gang",
+    "PRC_zhou_enlai",
+    "PRC_liu_shaoqi",
+    "PRC_dong_biwu",
+    "PRC_deng_xiaoping",
+    "PRC_luo_ruiqing",
+    "PRC_kang_sheng"
+  ],
+  "IF": [
+    {
+      "limit": {
+        "has_dlc": "No Compromise, No Surrender"
+      },
+      "recruit_character": [
+        "PRC_zhang_wentian",
+        "PRC_zhang_guotao",
+        "PRC_wang_ming",
+        "PRC_bo_gu",
+        "PRC_he_long",
+        "PRC_wang_shiwei",
+        "PRC_ren_bishi",
+        "PRC_wang_jiaxiang",
+        "PRC_mao_zemin",
+        "PRC_wu_han",
+        "PRC_xu_teli",
+        "PRC_zuo_quan",
+        "PRC_chen_changhao",
+        "PRC_deng_zihiu",
+        "PRC_qian_sanqiang",
+        "PRC_he_zehui",
+        "PRC_qian_xuesan",
+        "PRC_guotao_and_mao",
+        "PRC_li_zhen",
+        "PRC_li_lisan",
+        "PRC_chang_qiankun",
+        "PRC_yang_zhicheng",
+        "PRC_he_cheng",
+        "PRC_xie_juezai",
+        "PRC_liu_yalou",
+        "PRC_liu_yuti",
+        "PRC_cai_chang",
+        "PRC_wu_yuzhang",
+        "PRC_chen_yun",
+        "PRC_chen_tanqiu",
+        "PRC_li_xiannian",
+        "PRC_chen_shaomin",
+        "PRC_deng_yingchao",
+        "PRC_bo_yibo",
+        "PRC_lin_boqu",
+        "PRC_shao_shiping",
+        "PRC_chu_qing",
+        "PRC_pavel_mif",
+        "PRC_yang_shangkun",
+        "PRC_luo_shunchu",
+        "PRC_deng_fa",
+        "PRC_zhang_dingcheng",
+        "PRC_lu_sheng",
+        "PRC_rao_shoukun",
+        "PRC_zhang_yunyi",
+        "PRC_xiao_ke",
+        "PRC_ye_ting",
+        "PRC_luo_ronghuan",
+        "PRC_cheng_zihua",
+        "PRC_zhang_qinqiu",
+        "PRC_su_zhenhua",
+        "PRC_wang_shusheng",
+        "PRC_ulanhu",
+        "PRC_zhang_zongxun"
+      ],
+      "1046": {
+        "add_dynamic_modifier": {
+          "modifier": "PRC_the_yulin_garrison"
+        }
+      },
+      "ELSE": {
+        "recruit_character": [
+          "PRC_lin_bojiu",
+          "PRC_gao_qiu",
+          "PRC_ma_jin",
+          "PRC_liang_shen",
+          "PRC_deng_ye_peng",
+          "PRC_hsia_tian",
+          "PRC_zhang_wei",
+          "PRC_he_yuandang"
+        ]
+      }
+    },
+    {
+      "limit": {
+        "has_dlc": "No Compromise, No Surrender"
+      },
+      "set_power_balance": {
+        "id": "PRC_communist_power_struggle",
+        "left_side": "PRC_bop_left_side",
+        "right_side": "PRC_bop_right_side",
+        "set_value": -0.15
+      },
+      "set_variable": [
+        {
+          "PRC_central_committee_justify_war_goal_time": 0.5
+        },
+        {
+          "PRC_central_committee_political_power_factor": 0
+        },
+        {
+          "PRC_central_committee_faction_influence_war_score_factor": 0
+        },
+        {
+          "PRC_central_committee_party_popularity_stability_factor": 0
+        },
+        {
+          "PRC_central_committee_faction_influence_contribution_factor": 0
+        },
+        {
+          "PRC_central_committee_subjects_autonomy_gain": 0
+        },
+        {
+          "PRC_the_chinese_army_training_time_factor": 0.1
+        },
+        {
+          "PRC_the_chinese_army_army_org_factor": -0.1
+        },
+        {
+          "PRC_the_chinese_army_conscription_factor": -0.1
+        },
+        {
+          "PRC_the_chinese_army_experience_gain_army_factor": -0.15
+        },
+        {
+          "PRC_the_chinese_army_equipment_capture": 0
+        },
+        {
+          "PRC_the_chinese_army_army_armor_attack_factor": -0.1
+        },
+        {
+          "PRC_the_chinese_red_army_land_night_attack": 0
+        },
+        {
+          "PRC_the_chinese_red_army_org_loss_when_moving": 0
+        },
+        {
+          "PRC_the_chinese_red_army_attrition": -0.05
+        },
+        {
+          "PRC_the_chinese_red_army_max_dig_in": 0
+        },
+        {
+          "PRC_the_chinese_red_army_army_attack_factor": -0.1
+        },
+        {
+          "PRC_the_chinese_red_army_army_morale_factor": 0
+        },
+        {
+          "PRC_the_chinese_red_army_max_planning_factor": -0.05
+        },
+        {
+          "PRC_the_chinese_red_army_army_infantry_attack_factor": 0
+        },
+        {
+          "PRC_the_chinese_red_army_army_artillery_attack_factor": 0
+        },
+        {
+          "PRC_bolshevik_dominance_research_speed_factor": 0
+        },
+        {
+          "PRC_bolshevik_dominance_production_speed_industrial_complex_factor": 0
+        },
+        {
+          "PRC_bolshevik_dominance_political_power_gain": 0
+        },
+        {
+          "PRC_bolshevik_dominance_industrial_capacity_factory": 0
+        },
+        {
+          "PRC_bolshevik_dominance_industrial_capacity_dockyard": 0
+        },
+        {
+          "PRC_pla_navy_naval_coordination": 0
+        },
+        {
+          "PRC_pla_navy_naval_accidents_chance": -0.05
+        },
+        {
+          "PRC_pla_navy_navy_org_factor": 0.05
+        },
+        {
+          "PRC_pla_navy_navy_submarine_attack_factor": 0
+        },
+        {
+          "PRC_pla_navy_industrial_capacity_dockyard": 0
+        },
+        {
+          "PRC_pla_navy_sortie_efficiency": 0
+        },
+        {
+          "PRC_pla_navy_navy_max_range_factor": -0.1
+        },
+        {
+          "PRC_pla_air_force_air_ace_generation_chance_factor": 0
+        },
+        {
+          "PRC_pla_air_force_air_cas_efficiency": 0.05
+        },
+        {
+          "PRC_pla_air_force_air_intercept_efficiency": 0.025
+        },
+        {
+          "PRC_pla_air_force_air_strategic_bomber_bombing_factor": 0
+        },
+        {
+          "PRC_pla_air_force_air_cas_present_factor": 0
+        },
+        {
+          "PRC_pla_air_force_air_agility_factor": 0
+        },
+        {
+          "PRC_industry_production_speed_buildings_factor": -0.1
+        },
+        {
+          "PRC_industry_global_building_slots_factor": 0
+        },
+        {
+          "PRC_industry_research_speed_factor": -0.15
+        },
+        {
+          "PRC_industry_industrial_capacity_factory": -0.1
+        },
+        {
+          "PRC_industry_production_factory_start_efficiency_factor": 0
+        },
+        {
+          "PRC_industry_line_change_production_efficiency_factor": 0
+        },
+        {
+          "PRC_industry_production_factory_max_efficiency_factor": 0
+        },
+        {
+          "PRC_industry_local_resources_factor": 0
+        },
+        {
+          "PRC_asian_democratic_union_num_of_members": 1
+        },
+        {
+          "PRC_asian_democratic_union_modifier_research_speed_factor": 0
+        },
+        {
+          "PRC_asian_democratic_union_modifier_consumer_goods_factor": 0
+        },
+        {
+          "PRC_initialize_five_year_plan_civ_factories_multiplier": 1.5
+        },
+        {
+          "PRC_initialize_five_year_plan_mil_factories_multiplier": 2
+        },
+        {
+          "PRC_initialize_shorter_market_plans_civ_factories_multiplier": 1.5
+        },
+        {
+          "PRC_initialize_shorter_market_plans_mil_factories_multiplier": 1.5
+        },
+        {
+          "PRC_five_year_plan_length": 1825
+        },
+        {
+          "PRC_shorter_market_plan_length": 900
+        },
+        {
+          "PRC_gain_faction_inluence_number": 0.001
+        },
+        {
+          "PRC_infiltration_cost": 100
+        },
+        {
+          "PRC_infiltration_cost_base": "PRC_infiltration_cost"
+        },
+        {
+          "PRC_28_bolshevik_decisions_cost": 50
+        },
+        {
+          "PRC_rural_recruitment_manpower": 1000
+        },
+        {
+          "PRC_raid_weapon_depots_equipment_limited_success": 250
+        },
+        {
+          "PRC_raid_weapon_depots_equipment_gain_success": 500
+        },
+        {
+          "PRC_raid_weapon_depots_equipment_critical_success": 1000
+        },
+        {
+          "PRC_emergency_protocol_idea_days": 180
+        }
+      ],
+      "add_dynamic_modifier": [
+        {
+          "modifier": "PRC_central_committee"
+        },
+        {
+          "modifier": "PRC_the_chinese_red_army"
+        },
+        {
+          "modifier": "PRC_agrarian_society"
+        }
+      ],
+      "if": {
+        "limit": {
+          "has_DLC": "La Resistance"
+        },
+        "create_operative_leader": [
+          {
+            "name": "PRC_mo_xiong",
+            "bypass_recruitment": false,
+            "available_to_spy_master": true,
+            "traits": [
+              "operative_double_agent"
+            ],
+            "gfx": "GFX_portrait_PRC_mo_xiong",
+            "nationalities": [
+              "PRC",
+              "CHI"
+            ],
+            "gender": "male"
+          },
+          {
+            "name": "PRC_xiong_xianghui",
+            "bypass_recruitment": false,
+            "available_to_spy_master": true,
+            "traits": [
+              "operative_double_agent",
+              "operative_well_groomed"
+            ],
+            "gfx": "GFX_portrait_PRC_xiong_xianghui",
+            "nationalities": [
+              "PRC",
+              "CHI"
+            ],
+            "gender": "male"
+          },
+          {
+            "name": "PRC_li_kenong",
+            "bypass_recruitment": false,
+            "available_to_spy_master": true,
+            "gfx": "GFX_portrait_PRC_li_kenong",
+            "traits": [
+              "operative_double_agent"
+            ],
+            "nationalities": [
+              "PRC",
+              "CHI"
+            ],
+            "gender": "male"
+          }
+        ]
+      },
+      "set_country_flag": "PRC_pavel_mif_alive",
+      "add_ideas": "PRC_defunct_state_bank",
+      "else_if": {
+        "limit": {
+          "has_dlc": "Waking the Tiger"
+        },
+        "add_ideas": [
+          "PRC_the_long_march_1",
+          "PRC_red_army_weakened",
+          "PRC_low_popular_support_3",
+          "PRC_power_struggles"
+        ]
+      }
+    }
+  ],
+  "save_global_event_target_as": "WTT_communist_china",
+  "add_opinion_modifier": {
+    "target": "CHI",
+    "modifier": "hostile_status"
+  },
+  "1939.1.1": {
+    "add_political_power": 1198,
+    "add_command_power": 100,
+    "if": {
+      "limit": {
+        "has_dlc": "No Compromise, No Surrender"
+      },
+      "set_capital": {
+        "state": 1032
+      },
+      "set_oob": "PRC_1939_TSR",
+      "set_rule": {
+        "can_join_factions": true
+      },
+      "else_if": {
+        "limit": {
+          "NOT": {
+            "has_dlc": "No Compromise, No Surrender"
+          }
+        },
+        "set_capital": {
+          "state": 1032
+        },
+        "set_oob": "PRC_1939"
+      }
+    },
+    "IF": {
+      "limit": {
+        "NOT": {
+          "has_dlc": "No Compromise, No Surrender"
+        }
+      },
+      "complete_national_focus": [
+        "PRC_strengthen_the_central_secretariat",
+        "PRC_land_redistribution",
+        "PRC_enforce_the_three_rules",
+        "PRC_agrarian_socialism",
+        "PRC_the_yanan_base_area",
+        "PRC_focus_on_china",
+        "PRC_infiltration",
+        "PRC_revolutionary_military_commission",
+        "PRC_literacy_programs",
+        "CHI_invite_foreign_investors",
+        "CHI_mission_to_the_soviet_union",
+        "PRC_ban_the_opium_trade",
+        "PRC_military_intelligence_department",
+        "PRC_prepare_for_war_with_japan",
+        "PRC_anti_japanese_expedition",
+        "PRC_provoke_japan",
+        "PRC_mobile_warfare"
+      ],
+      "set_research_slots": 3,
+      "add_ideas": [
+        "PRC_revolutionary_military_commission",
+        "PRC_low_popular_support_3",
+        "PRC_the_long_march_2",
+        "PRC_mobile_warfare",
+        "PRC_focus_on_china"
+      ],
+      "remove_ideas": [
+        "PRC_low_popular_support_1",
+        "PRC_the_long_march_1"
+      ],
+      "ELSE_IF": {
+        "limit": {
+          "has_dlc": "No Compromise, No Surrender"
+        },
+        "complete_national_focus": [
+          "PRC_put_an_end_to_the_sufan",
+          "PRC_eight_points_for_attention",
+          "PRC_rally_the_industry",
+          "PRC_long_march_to_recovery",
+          "PRC_reestablish_the_state_bank",
+          "PRC_red_army_reborn",
+          "PRC_develop_yanan_soviet",
+          "PRC_rally_the_peasants",
+          "PRC_guide_central_committee",
+          "PRC_leadership_of_mao",
+          "PRC_on_guerilla_warfare",
+          "PRC_three_rules_of_discipline",
+          "PRC_request_for_aid",
+          "PRC_establish_friendly_bases",
+          "PRC_propaganda_efforts",
+          "PRC_secure_the_peoples_support",
+          "PRC_raid_weapon_depots",
+          "PRC_dissent_in_the_united_front",
+          "PRC_empower_the_guerillas"
+        ],
+        "unlock_national_focus": [
+          "PRC_the_westward_expedition",
+          "PRC_expedite_land_revolution",
+          "PRC_the_eastward_expedition",
+          "PRC_burn_the_paper_tigers",
+          "PRC_usurp_control_over_yanan",
+          "PRC_CSCEC_mils",
+          "PRC_ban_special_goods_trade",
+          "PRC_asymmetric_warfare"
+        ],
+        "add_ideas": [
+          "PRC_trade_of_special_goods_banned_stabilised",
+          "PRC_mediating_general_secretary_idea_drifting_right"
+        ],
+        "remove_ideas": "PRC_mediating_general_secretary_idea",
+        "add_to_variable": [
+          {
+            "PRC_the_chinese_red_army_max_dig_in": 5
+          },
+          {
+            "PRC_the_chinese_red_army_org_loss_when_moving": -0.05
+          }
+        ],
+        "add_power_balance_value": {
+          "id": "PRC_communist_power_struggle",
+          "value": -0.05
+        }
+      }
+    },
+    "add_to_war": {
+      "targeted_alliance": "CHI",
+      "enemy": "JAP",
+      "hostility_reason": "asked_to_join"
+    },
+    "set_country_flag": "PRC_joined_CHI_against_JAP",
+    "remove_opinion_modifier": {
+      "target": "CHI",
+      "modifier": "hostile_status"
+    },
+    "add_state_claim": [
+      612,
+      611,
+      714,
+      717,
+      328,
+      716,
+      715,
+      610,
+      609,
+      597,
+      614,
+      608,
+      615
+    ],
+    "add_ideas": [
+      "partial_economic_mobilisation",
+      "service_by_requirement",
+      "closed_economy"
+    ],
+    "set_technology": {
+      "tech_mountaineers": 1,
+      "electronic_mechanical_engineering": 1,
+      "radio": 1,
+      "mechanical_computing": 1,
+      "computing_machine": 1,
+      "basic_encryption": 1,
+      "basic_decryption": 1,
+      "basic_machine_tools": 1,
+      "improved_machine_tools": 1,
+      "advanced_machine_tools": 1,
+      "fuel_silos": 1,
+      "fuel_refining": 1,
+      "construction1": 1,
+      "construction2": 1,
+      "construction3": 1,
+      "concentrated_industry": 1,
+      "concentrated_industry2": 1,
+      "concentrated_industry3": 1
+    },
+    "set_grand_doctrine": "mass_assault",
+    "set_sub_doctrine": "peoples_war",
+    "add_mastery": {
+      "amount": 125,
+      "sub_doctrine": "peoples_war"
+    }
+  }
+}

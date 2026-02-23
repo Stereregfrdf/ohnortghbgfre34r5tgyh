@@ -1,0 +1,190 @@
+{
+  "capital": 1043,
+  "oob": "MEN_1936",
+  "set_technology": {
+    "infantry_weapons": 1,
+    "tech_mountaineers": 1,
+    "tech_support": 1,
+    "gw_artillery": 1
+  },
+  "recruit_character": [
+    "MEN_prince_demchugdongrub",
+    "MEN_hesehn_tiemei",
+    "MEN_guan_xingde",
+    "MEN_kyoiji_tomonaga",
+    "MEN_deng_linge",
+    "MEN_hung_zhehuang",
+    "MEN_nakajima_kesago",
+    "MEN_yonimitsu_kasahara",
+    "MEN_nalan_kang_an",
+    "MEN_songgotu_zhanshan",
+    "MEN_megata_toshiro",
+    "MEN_yondonwangchug",
+    "MEN_li_shouxin",
+    "MEN_chin_yung_chang",
+    "MEN_serendongrub",
+    "MEN_jodbajab",
+    "MEN_altanochir",
+    "MEN_wang_ying"
+  ],
+  "IF": {
+    "limit": {
+      "NOT": {
+        "has_dlc": "No Compromise, No Surrender"
+      }
+    },
+    "add_ideas": [
+      "MEN_pailingmiao_council_idea",
+      "MEN_stretched_administration_idea"
+    ],
+    "recruit_character": [
+      "MEN_songgotu_shangzhi",
+      "MEN_sonin_xiangying",
+      "MEN_zhao_zhanshan"
+    ],
+    "ELSE": {
+      "set_variable": [
+        {
+          "MEN_levy_cap_max": 24
+        },
+        {
+          "MEN_levy_cap_min": 0
+        },
+        {
+          "MEN_levy_cap": 2
+        },
+        {
+          "MEN_levy_deployed": 0
+        }
+      ],
+      "clamp_variable": {
+        "var": "MEN_levy_cap",
+        "min": "MEN_levy_cap_min",
+        "max": "MEN_levy_cap_max"
+      },
+      "division_template": {
+        "name": "Mongol Levy",
+        "is_locked": true,
+        "force_allow_recruiting": false,
+        "regiments": {
+          "irregular_infantry": [
+            {
+              "x": 0,
+              "y": 0
+            },
+            {
+              "x": 0,
+              "y": 1
+            },
+            {
+              "x": 1,
+              "y": 0
+            },
+            {
+              "x": 1,
+              "y": 1
+            },
+            {
+              "x": 2,
+              "y": 0
+            },
+            {
+              "x": 2,
+              "y": 1
+            }
+          ]
+        }
+      },
+      "set_country_flag": "MEN_banner_system_is_active",
+      "add_ideas": [
+        "MEN_mongol_banners_idea",
+        "MEN_pailingmiao_council_idea",
+        "MEN_stretched_administration_idea",
+        "MEN_communist_revolutionaries_idea",
+        "MEN_disorganized_army_idea"
+      ]
+    }
+  },
+  "1939.1.1": {
+    "add_to_war": {
+      "targeted_alliance": "JAP",
+      "enemy": "CHI",
+      "hostility_reason": "puppet"
+    },
+    "add_political_power": 1198,
+    "add_command_power": 100,
+    "complete_national_focus": [
+      "army_effort",
+      "equipment_effort",
+      "motorization_effort",
+      "aviation_effort",
+      "naval_effort",
+      "flexible_navy",
+      "industrial_effort",
+      "construction_effort",
+      "production_effort"
+    ],
+    "oob": "MEN_1939",
+    "set_technology": {
+      "electronic_mechanical_engineering": 1,
+      "radio": 1,
+      "mechanical_computing": 1,
+      "basic_machine_tools": 1,
+      "improved_machine_tools": 1,
+      "advanced_machine_tools": 1,
+      "construction1": 1,
+      "construction2": 1,
+      "dispersed_industry": 1,
+      "dispersed_industry2": 1
+    },
+    "set_grand_doctrine": [
+      "grand_battleplan",
+      "new_fleet_in_being"
+    ],
+    "complete_special_project": {
+      "project": "sp:sp_air_radar"
+    },
+    "MEN_prince_demchugdongrub": {
+      "add_country_leader_role": {
+        "promote_leader": true,
+        "country_leader": {
+          "ideology": "despotism",
+          "expire": "1965.1.1.1",
+          "traits": [
+            "MEN_borjigin_descendant"
+          ]
+        }
+      }
+    },
+    "set_country_flag": "MEN_moved_capital_to_zhangbei",
+    "set_capital": {
+      "state": 611,
+      "remember_old_capital": true
+    },
+    "remove_ideas": "MEN_pailingmiao_council_idea",
+    "swap_ideas": {
+      "remove_idea": "MEN_stretched_administration_idea",
+      "add_idea": "MEN_stretched_administration_idea_2"
+    },
+    "add_ideas": [
+      "MEN_chin_yung_chang",
+      "MEN_wang_ying",
+      "MEN_true_mongol_state"
+    ],
+    "set_cosmetic_tag": "MEN_mengjiang_autonomy",
+    "add_state_core": [
+      616,
+      1040
+    ]
+  },
+  "set_politics": {
+    "ruling_party": "neutrality",
+    "last_election": "1936.1.1",
+    "election_frequency": 48,
+    "elections_allowed": false
+  },
+  "set_popularities": {
+    "fascism": 50,
+    "neutrality": 50
+  }
+}
