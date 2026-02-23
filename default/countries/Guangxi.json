@@ -1,0 +1,197 @@
+{
+  "capital": 594,
+  "set_variable": [
+    {
+      "CHI_warlord_army_political_power_gain": 0
+    },
+    {
+      "CHI_warlord_army_army_core_attack_factor": 0
+    },
+    {
+      "CHI_warlord_army_army_core_defence_factor": 0
+    },
+    {
+      "CHI_warlord_army_production_speed_buildings_factor": 0
+    },
+    {
+      "CHI_warlord_army_army_infantry_attack_factor": 0
+    },
+    {
+      "CHI_warlord_army_army_infantry_defence_factor": 0
+    },
+    {
+      "CHI_warlord_army_special_forces_cap": 0
+    },
+    {
+      "CHI_warlord_army_special_forces_out_of_supply_factor": 0
+    },
+    {
+      "warlord_faction_influence_war_score_factor": 0
+    },
+    {
+      "warlord_faction_influence_contribution_factor": 0
+    },
+    {
+      "RNG_state_shintoism_surrender_limit": 0
+    },
+    {
+      "RNG_state_shintoism_war_support_factor": 0
+    },
+    {
+      "RNG_state_shintoism_pocket_penalty": 0
+    },
+    {
+      "RNG_state_shintoism_stability_factor": 0
+    },
+    {
+      "RNG_state_shintoism_army_core_defence_factor": 0
+    },
+    {
+      "RNG_state_shintoism_research_speed_factor": 0
+    },
+    {
+      "RNG_state_shintoism_recruitable_population_factor": 0
+    },
+    {
+      "RNG_state_shintoism_political_power_gain": 0
+    }
+  ],
+  "IF": [
+    {
+      "limit": {
+        "has_dlc": "No Compromise, No Surrender"
+      },
+      "set_oob": "GXC_1936_sea",
+      "else": {
+        "set_oob": "GXC_1936"
+      }
+    },
+    {
+      "limit": {
+        "has_dlc": "No Compromise, No Surrender"
+      },
+      "add_ideas": [
+        "GXC_uneasy_minds_idea",
+        "CHI_warlord_looting_idea"
+      ],
+      "ELSE": {
+        "recruit_character": [
+          "GXC_wang_shuming",
+          "GXC_chen_jitang"
+        ]
+      }
+    }
+  ],
+  "set_stability": 0.5,
+  "set_war_support": 0.55,
+  "set_technology": {
+    "infantry_weapons": 1
+  },
+  "set_grand_doctrine": "mass_assault",
+  "recruit_character": [
+    "GXC_li_zongren",
+    "GXC_liu_peng",
+    "GXC_zhang_lu",
+    "GXC_li_ting",
+    "GXC_bai_yeung",
+    "GXC_heng_lo",
+    "GXC_yu_hanmou",
+    "GXC_zha_zemin",
+    "GXC_huo_duyi",
+    "GXC_niu_keung",
+    "GXC_bai_chongxi",
+    "GXC_teng_qingshan",
+    "GXC_do_liang",
+    "GXC_huang_shaohong",
+    "GXC_yang_hulin",
+    "GXC_li_jishen",
+    "GXC_lei_zhong"
+  ],
+  "if": {
+    "limit": {
+      "has_dlc": "Waking the Tiger"
+    },
+    "add_ideas": [
+      "PRC_government_corruption",
+      "CHI_ineffective_bureaucracy_warlord",
+      "CHI_warlord_state_idea"
+    ]
+  },
+  "1939.1.1": {
+    "oob": "GXC_1939",
+    "add_political_power": 1198,
+    "add_command_power": 100,
+    "IF": {
+      "limit": {
+        "NOT": {
+          "has_dlc": "No Compromise, No Surrender"
+        }
+      },
+      "CHI": {
+        "add_to_faction": "PREV"
+      },
+      "add_to_war": {
+        "targeted_alliance": "CHI",
+        "enemy": "JAP",
+        "hostility_reason": "asked_to_join"
+      },
+      "complete_national_focus": [
+        "CHI_secure_internal_politics",
+        "CHI_cooperation_with_the_nationalists",
+        "CHI_industrial_investment",
+        "CHI_public_education_reform",
+        "CHI_long_term_economic_planning",
+        "CHI_technological_cooperation",
+        "CHI_local_arms_production",
+        "CHI_new_model_province",
+        "CHI_root_out_corruption",
+        "CHI_land_reform",
+        "CHI_reform_the_administration"
+      ],
+      "ELSE": {
+        "CHI": {
+          "add_to_faction": "PREV"
+        },
+        "add_to_war": {
+          "targeted_alliance": "CHI",
+          "enemy": "JAP",
+          "hostility_reason": "asked_to_join"
+        },
+        "complete_national_focus": [
+          "CHI_sea_secure_internal_politics",
+          "CHI_sea_cooperation_with_the_nationalists",
+          "CHI_sea_develop_capital",
+          "CHI_sea_expand_public_education",
+          "CHI_sea_long_term_economic_planning",
+          "CHI_sea_technological_cooperation",
+          "CHI_sea_develop_capital_arsenal",
+          "CHI_sea_new_model_province",
+          "CHI_sea_root_out_corruption",
+          "CHI_sea_land_reform",
+          "CHI_sea_reform_the_administration",
+          "CHI_sea_develop_capital",
+          "CHI_sea_further_industrial_investment"
+        ],
+        "unlock_national_focus": [
+          "GXC_the_japanese_visit",
+          "GXC_question_chiangs_authority",
+          "GXC_the_scorched_earth_speech",
+          "GXC_rumors_of_deposition",
+          "GXC_denounce_chiang",
+          "GXC_formation_of_the_nraja",
+          "GXC_declare_opposition"
+        ]
+      }
+    }
+  },
+  "set_convoys": 5,
+  "set_politics": {
+    "ruling_party": "neutrality",
+    "last_election": "1936.1.1",
+    "election_frequency": 48,
+    "elections_allowed": false
+  },
+  "set_popularities": {
+    "neutrality": 100
+  }
+}
